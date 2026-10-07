@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-canvas: #F8F6F1;
+    --text-primary: #222222;
+    --text-secondary: #6F6A62;
+    --surface-card: #FFFFFF;
+    --border-subtle: #E7E2D9;
+    --accent-sage: #7C8B70;
+    --accent-terracotta: #B87961;
+  }
+
+  body {
+    background-color: var(--bg-canvas);
+    color: var(--text-primary);
+    font-family: 'Noto Sans Georgian', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: 'Noto Serif Georgian', Georgia, serif;
+  }
+}
+
+/* Print Styles */
+@media print {
+  header, nav, .no-print, button:not(.print-include) {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .print-page {
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+}
+
+/* Clean micro scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #E0DBD0;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C8C2B5;
+}

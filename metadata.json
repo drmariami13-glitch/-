@@ -1,0 +1,8 @@
+{
+  "name": "ჩვენი მენიუ",
+  "description": "ციფრული სახლის რესტორნის მენიუ 3 ადამიანისთვის — საუზმე, სადილი და დესერტი რესტორნის ესთეტიკით.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
